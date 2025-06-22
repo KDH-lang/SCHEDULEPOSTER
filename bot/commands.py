@@ -36,7 +36,7 @@ class AnnouncementModal(discord.ui.Modal, title="📢 공지사항 작성"):
             announcement_channel = None
             for guild in interaction.client.guilds:
                 for channel in guild.text_channels:
-                    if channel.name == "💾ㅣ자료실":
+                    if channel.name == "📢ㅣ주요공지":
                         announcement_channel = channel
                         break
                 if announcement_channel:
